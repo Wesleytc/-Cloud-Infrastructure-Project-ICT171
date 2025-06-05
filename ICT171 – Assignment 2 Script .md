@@ -8,17 +8,23 @@ Launching Ec2 Instance and Configuration
 
 Follow this image to configure 
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/e47b93d2-7dfc-45af-81a9-89b8cd94d36b" />
 
 Associate Elastic IP to your server IP
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/0b35f256-6d95-4582-8721-7257ec6fa7fd" />
+
 Click on actions then Press Associate to the IP you want and should look like this 
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/15ee015a-ed3e-43b0-b1cd-e5d1b72c6d44" />
 
 After this you can now connect to your Instance with your ssh key 
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/9e06e351-66ee-4e09-8758-cbc8f63d6bc3" />
 
 Once copied remembering your key.pem being in downloads, copy the ssh above and input it in a command terminal or power shell like the following:
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/bb067294-9c3b-4892-a30a-c5ce766911d9" />
 
 ## Now you can begin to install WordPress with the following steps:
 
