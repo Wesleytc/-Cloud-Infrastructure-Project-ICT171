@@ -212,9 +212,15 @@ Make sure your domain name is correctly pointed to your server’s public IP and
 
 When prompts Inputted correctly Output should display something like this:
 
+Step 1
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/b7013cbc-6c52-481f-83af-ee9078de972f" />
 
+Step 2 
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/34e8fe30-a322-4577-a7de-9eb7f2ccad91" />
+
+Step 3
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/be0b1287-8ee0-4f98-a8b9-701d42f03616" />
 
