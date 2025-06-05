@@ -4,6 +4,7 @@
 
 Launching Ec2 Instance and Configuration
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/311632de-3054-40c1-8629-5db70286c8db" />
 
 Follow this image to configure 
 
@@ -21,7 +22,7 @@ Once copied remembering your key.pem being in downloads, copy the ssh above and 
 
 ## Now you can begin to install WordPress with the following steps:
 
-1.	Install Apache server on Ubuntu
+### 1.	Install Apache server on Ubuntu
 
          sudo apt update 
          sudo apt upgrade
@@ -33,21 +34,21 @@ This command installs Apache on your Ubuntu server so it can serve web pages (li
 After installation, Apache runs automatically, and you can verify it's working by accessing your server’s IP address in a browser it should show the default Apache welcome page.
 
 
-2.	Install PHP and MySQL PHP connector
+### 2.	Install PHP and MySQL PHP connector
 
         sudo apt install php libapache2-mod-php php-mysql
 
 
 PHP is the scripting language WordPress is written in. The libapache2-mod-php module allows Apache to process. phpfiles. The php-mysql package enables PHP to interact with MySQL databases — essential for WordPress to function. This step ensures your server can run WordPress scripts and connect them to the database.
 
-3.	Install MySQL server
+### 3.	Install MySQL server
 
         sudo apt install mysql-server
 
 
 MySQL is the database management system used by WordPress to store content, users, settings, and more. This command installs the full MySQL server package, giving you the ability to create and manage databases locally on your Ubuntu machine.
 
-4.	Login to MySQL server
+### 4.	Login to MySQL server
 
         sudo mysql -u root
 
@@ -79,7 +80,7 @@ Grant database permissions to the WordPress user
 
 Grants the wp_user full access (read, write, modify) to all tables in the wp database. Without this, WordPress wouldn’t be able to manage its data.
 
-9. Download the latest WordPress package
+### 5. Download the latest WordPress package
 
         cd /tmp
         wget https://wordpress.org/latest.tar.gz
@@ -87,7 +88,7 @@ Grants the wp_user full access (read, write, modify) to all tables in the wp dat
 
 This downloads the compressed latest version of WordPress from the official site into the temporary directory. Using /tmp keeps the system organized, and the file is removed on reboot unless you move it elsewhere.
 
-5. Extract the WordPress archive
+### 6. Extract the WordPress archive
       
        tar -xvf latest.tar.gz
 
@@ -95,7 +96,7 @@ This downloads the compressed latest version of WordPress from the official site
 Extracts the latest.tar.gz archive, unzipping all WordPress files into a new directory named wordpress. These are the core application files needed to run the website.
 
 
-6. Move WordPress to Apache's web root
+### 7. Move WordPress to Apache's web root
 
         sudo mv wordpress/ /var/www/html
 
@@ -157,7 +158,7 @@ Now you can go in your WordPress settings click general, and you should be able 
 
 
 
-7. Restart or reload Apache
+### 8. Restart or reload Apache
 
        sudo systemctl restart apache2
        # OR
@@ -165,7 +166,7 @@ Now you can go in your WordPress settings click general, and you should be able 
 
 Reloads Apache’s configuration and applies any changes you've made (like adding PHP or moving WordPress files). restart will stop and start Apache, while reload only refreshes its configuration without downtime.
 
-8. Install Certbot and the Apache plugin
+### 9. Install Certbot and the Apache plugin
 
        sudo apt-get update
        sudo apt install certbot python3-certbot-apache
@@ -173,7 +174,7 @@ Reloads Apache’s configuration and applies any changes you've made (like addin
 
 Certbot is a free tool from Let’s Encrypt that automates the process of securing your website with an SSL certificate. This command installs both the tool, and the Apache plugin needed for automatic configuration.
 
-9. Generate and install a free SSL certificate
+### 10. Generate and install a free SSL certificate
     
 - Detects your Apache virtual host configurations
 
