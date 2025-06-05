@@ -158,7 +158,7 @@ To manage DNS records:
 	Add TXT records (for verification or SPF, DKIM, etc.)
 5.	Click Save after making changes.
 
-
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/60c619d3-5726-42a9-a51d-84ed1fa5d4bb" />
 
 Example: Point example.com to a VPS
 •	A record:
@@ -166,10 +166,11 @@ Name: @
 Type: A
 Value: 13.236.240.94 (your VPS IP)
 
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/74541060-9b67-4fe3-81be-dcd2b646920e" />
 
 Now you can go in your WordPress settings click general, and you should be able to change Address URL & Site URL to your custom DNS:
 
-
+<img width="451" alt="image" src="https://github.com/user-attachments/assets/e253ae5b-8356-404e-983f-71ff8d4bf431" />
 
 
 ### 8. Restart or reload Apache
@@ -185,6 +186,7 @@ Reloads Apache’s configuration and applies any changes you've made (like addin
        sudo apt-get update
        sudo apt install certbot python3-certbot-apache
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/11184b74-4b3f-4b55-ae5c-f335666ec8d7" />
 
 Certbot is a free tool from Let’s Encrypt that automates the process of securing your website with an SSL certificate. This command installs both the tool, and the Apache plugin needed for automatic configuration.
 
@@ -210,9 +212,11 @@ Make sure your domain name is correctly pointed to your server’s public IP and
 
 When prompts Inputted correctly Output should display something like this:
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/b7013cbc-6c52-481f-83af-ee9078de972f" />
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/34e8fe30-a322-4577-a7de-9eb7f2ccad91" />
 
-
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/be0b1287-8ee0-4f98-a8b9-701d42f03616" />
 
 
 Restart or reload Apache
@@ -224,7 +228,12 @@ Restart or reload Apache
        sudo systemctl reload apache2
 Go to web with URL and should display this:
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/292af308-96f2-4f6b-8d28-a269d0148464" />
+
+
 Repeat same Process for Apache Blog 
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/491dee09-49c2-42bb-8bcc-52915be21973" />
 
 Reference:
 Was Aided by this video but was missing a lot of important steps I had to increment myself.
